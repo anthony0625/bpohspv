@@ -137,7 +137,7 @@ class DEAPOptimisation(bluepyopt.optimisations.Optimisation):
 
         self.hof = hof
         if self.hof is None:
-            self.hof = deap.tools.HallOfFame(10)
+            self.hof = deap.tools.HallOfFame(50)
 
         # Create a DEAP toolbox
         self.toolbox = deap.base.Toolbox()
